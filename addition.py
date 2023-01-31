@@ -17,7 +17,7 @@ def write():
     for row in hosts_find.findAll('body'):
         url_text= row.text
     hosts = '\n'+'# Start of entries inserted by Pings software for Windows 10. Please do not put any host names in here. Url used: '+URL+'\n'+url_text+'\n'+'# End of entries inserted by Pings software for Windows 10'
-    filepath = "C:\\Users\\davon\\Desktop\\hosts"
+    filepath = "C:\\Windows\\System32\\drivers\\etc\\hosts"
     with open(filepath, "a") as f:
         f.write(hosts)
     

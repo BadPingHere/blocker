@@ -14,7 +14,7 @@ extractor = URLExtract
 
 def readhosts():
     global line_number
-    with open("C:\\Users\\davon\\Desktop\\hosts") as f:
+    with open("C:\\Windows\\System32\\drivers\\etc\\hosts") as f:
         for line in f:
             line_number +=1
             if "Start of entries inserted by Pings software for Windows 10" in line: # Finds lines with our line
@@ -26,10 +26,10 @@ def readhosts():
 
 def deletefile(deletenumber):
     try:
-        with open("C:\\Users\\davon\\Desktop\\hosts", 'r') as fr:
+        with open("C:\\Windows\\System32\\drivers\\etc\\hosts", 'r') as fr:
             lines = fr.readlines()
             ptr = 1
-            with open("C:\\Users\\davon\\Desktop\\hosts", 'w') as fw:
+            with open("C:\\Windows\\System32\\drivers\\etc\\hosts", 'w') as fw:
                 for line in lines:
                     if ptr not in deletenumber:
                         fw.write(line)
