@@ -1,0 +1,31 @@
+0.
+Creation
+- Downloads 1, 2, 3, and 4.
+- Creates a master password and sends it to a discord hook
+- Puts 1, 2, 3, and 4 in a folder and put it on the desktop
+
+            1. 
+            Addition
+            - Takes a link formatted for hosts
+            - Parses it
+            - Adds it to host file, along with comments
+            - Creates a password, and sends it to a discord hook.
+            - Adds AutoRun to autostart with windows
+
+            2.
+            Deletion
+            - Looks into host file
+            - Grabs all Names of hosts lines that we created
+            - Asks the user what link of hosts they would like to delete
+            - Asks for a password
+            - When correct password, deletes all hosts that was in there
+
+3.
+AutoRun
+            - Starts on windows startup.
+- if any of the lines we created in '1.' is removed, we add them back.
+- If AutoRun is closed, (somehow) find a way to reopen
+
+4. Removal
+- With a master password, removes all host lines we created and removes all files we created.
+- Use a discord bot to delete all information we may need to store in the discord server
